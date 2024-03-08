@@ -1,0 +1,11 @@
+
+#main-bg::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    background-color: aquamarine;
+    transform: skewY(-3deg);
+}
