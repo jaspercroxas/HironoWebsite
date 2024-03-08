@@ -4,8 +4,9 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
-    height: 50px;
-    background-color: aquamarine;
+    bottom: -100px;
+    height: 150px;
+    z-index: -1;
+    background-color: #FFC6C6;
     transform: skewY(-3deg);
 }
