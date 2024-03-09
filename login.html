@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/login.css">
 
         <!-- PAGE ICON -->
         <link rel="icon" href="img/h-sleep-icon.png" type="image/icon type">
@@ -19,93 +19,47 @@
     </head>
     <body>
         <div class="">
-            
-            <!-- NAVIGATION BAR -->
-            <nav class="bg-[#FFC6C6] fixed w-full z-20 top-0 start-0 border-b border-[#FFC6C6] shadow-md">
-                <div class="container mx-auto">
-                    <div class=" flex flex-wrap items-center justify-between mx-auto my-4">
-                        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                            <img src="img/pm-icon-2.png" class="h-8 transition-all duration-500 hover:scale-105" alt="Pop Mart Logo">
+            <div class="container mx-auto items-center grid lg:grid-cols-12 mt-32 gap-4 bg-[#FFFDF6] rounded-xl shadow-xl py-32">
+                <div class="col-start-2 col-span-4 items-center">
+                    <a href="index.html">
+                        <h1 class="text-[96px] text-[#FFC6C6] text-center leading-none">HIRONO</h1>
+                        <h3 class="text-[24px] text-[#FFC6C6] text-center">A Blind Box Collectible Figures</h3>
+                    </a>
+                    <img class="w-full rounded-xl mt-8" src="img/many-figures.png"/>
+                </div>
+                <div class="col-start-7 col-span-5 items-center">
+                    <h2 class="text-[32px] text-[#FFC6C6] text-center leading-none">Log in to your account:</h2>
+                    <form class="mt-5">
+                        <h3 class="text-[20px] text-[#424C51]">Email/Username:</h3>
+                        <input type="text" class="min-w-full border-2 border-[#FFC6C6] rounded-xl text-[18px] text-[#424C51] p-2">
+                        <h3 class="text-[20px] text-[#424C51] mt-3">Password:</h3>
+                        <input type="password" class="min-w-full border-2 border-[#FFC6C6] rounded-xl text-[18px] text-[#424C51] p-2">
+                        <a href="" class="w-full">
+                            <h3 class="text-[16px] text-[#424C51] mt-3 text-right hover:underline">Forgot Password?</h3>
                         </a>
-                        <div class="flex flex-wrap items-center">
-                            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                                <a href="login.html">
-                                    <button type="button" class="text-[#FFC6C6] bg-[#FFFDF6] hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-pink-200 font-medium rounded-lg text-sm px-4 py-2 text-center">
-                                        LOG IN
-                                    </button>
-                                </a>
-                                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#FFFDF6] rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
-                                    <span class="sr-only">Open main menu</span>
-                                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium bg-[#FFFDF6] border rounded-lg md:bg-[#FFC6C6] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 mr-8">
-                                    <li>
-                                        <a href="index.html" class="block py-2 px-3 text-[#FFFDF6] hover:text-gray-200 md:p-0 " aria-current="page">HOME</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="block py-2 px-3 text-[#FFFDF6] hover:text-gray-200 md:p-0 ">ABOUT</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html" class="block py-2 px-3 text-[#FFFDF6] hover:text-gray-200 md:p-0 ">CONTACT</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        
+                        <button type="button" class="text-[#FFFDF6] inline-flex bg-[#FFC6C6] hover:bg-[#ee8ea1] focus:ring-4 focus:outline-none focus:ring-pink-200 font-medium rounded-xl text-[20px] px-4 py-2 text-center items-center">
+                            Log in
+                            <span class="">
+                                <img src="img/right-arrow-icon.png" class="h-6 rounded-full items-center ml-2"/>
+                            </span>
+                        </button>
+                    </form>
+
+                    <div class="border-t-4 border-[#FFC6C6] mt-12">
+                        <h3 class="text-[16px] text-[#424C51] mt-3">Don't have an account?</h3>
+                        <a href="">
+                            <button type="button" class="text-[#FFFDF6] bg-[#FFC6C6] w-full hover:bg-[#ee8ea1] focus:ring-4 focus:outline-none focus:ring-pink-200 text-[20px] rounded-xl font-medium px-8 py-2 text-center mt-2">
+                                Sign up here
+                            </button>
+                        </a>
                     </div>
                 </div>
-                
-            </nav>
-  
-            <!-- MAIN CONTENT -->
-            <div class="container mx-auto items-center grid lg:grid-cols-12 gap-4 mt-36">
-                
+
             </div>
-            
-            <!-- FOOTER -->
-            <footer class="bg-[#FFC6C6]">
-                <div class="container mx-auto mt-20">
-                    <div class="flex flex-wrap items-center justify-between mx-auto mt-44">
-                        <div>
-                            <h1 class="text-[40px] text-[#FFFDF6] leading-none mt-20">Take a step in the</h1>
-                            <h1 class="text-[40px] text-[#FFFDF6]">world of <span class="text-[#424C51]">Hirono!</span> </h1>
-                        </div>
-                        <div class="flex flex-wrap items-center justify-between w-auto mt-20">
-                            <a href="https://www.facebook.com/popmartglobal">
-                                <img class="h-8 transition-all duration-500 hover:scale-105 m-1" src="img/fb-icon.png"/>
-                            </a>
-                            <a href="https://www.instagram.com/popmartglobal/">
-                                <img class="h-8 transition-all duration-500 hover:scale-105 m-1" src="img/ig-icon.png"/>
-                            </a>
-                            <a href="https://www.tiktok.com/@popmartglobal?lang=en">
-                                <img class="h-9 transition-all duration-500 hover:scale-105 m-1" src="img/tiktok-icon.png"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between mx-auto mt-20 pb-5">
-                        <div class="">
-                            <a href="" class="flex flex-wrap items-center justify-between">
-                                <img class="h-7" src="img/email-icon.png"/>
-                                <h4 class="text-[#424C51] text-base ml-2 hover:underline">support@popmart.com</h4>
-                            </a>
-                        </div>
-                        <div class="flex flex-wrap items-center justify-between">
-                            <a href="" class="text-[#424C51] text-base hover:underline">
-                                Privacy Policy
-                            </a>
-                            <a href="" class="text-[#424C51] text-base ml-10 hover:underline">
-                                Terms and Conditions
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
 
         </div>
+            
+            
 
         
     </body>
