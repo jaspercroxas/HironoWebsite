@@ -17,6 +17,20 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+        <style type="text/tailwindcss">
+            @layer utilities{
+                .nav{
+                    @apply relative tracking-[1px];
+                }
+                .nav::after{
+                    @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300;
+                }
+                .nav:hover::after {
+                    @apply w-[100%];
+                }
+            }
+        </style>
     </head>
     <body>
         <div class="">
@@ -45,13 +59,13 @@
                             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                                 <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium bg-[#FFFDF6] border rounded-lg md:bg-[#FFC6C6] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 mr-8">
                                     <li>
-                                        <a href="index.html" class="block py-2 px-3 text-[#FFFDF6] hover:text-gray-200 md:p-0 " aria-current="page">HOME</a>
+                                        <a href="index.html" class="nav block py-2 px-3 text-[#FFFDF6] hover:text-white md:p-0 " aria-current="page">HOME</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="block py-2 px-3 text-[#FFFDF6] hover:text-gray-200 md:p-0 ">ABOUT</a>
+                                        <a href="#" class="nav block py-2 px-3 text-[#FFFDF6] hover:text-white md:p-0 ">ABOUT</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html" class="block py-2 px-3 text-[#FFFDF6] hover:text-gray-200 md:p-0 ">CONTACT</a>
+                                        <a href="contact.html" class="nav block py-2 px-3 text-[#FFFDF6] hover:text-white md:p-0 ">CONTACT</a>
                                     </li>
                                 </ul>
                             </div>
